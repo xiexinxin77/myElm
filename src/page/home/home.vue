@@ -18,7 +18,7 @@
         <div class="hot_city_container">
             <h4 class="city_title">热门城市</h4>
             <ul class="citylistul clear">
-                <router-link to="/" tag="li" v-for="item in hotCity" :key="item.id">
+                <router-link :to="'/city/' + item.id" tag="li" v-for="item in hotCity" :key="item.id">
                     {{item.name}}
                 </router-link>
             </ul>

@@ -1,6 +1,7 @@
 <template>
     <header id="head_top">
         <slot name="logo"></slot>
+        <slot name="search"></slot>
         <router-link v-if="signinUp" to="/" class="head_login">
             <span class="login_span">登录|注册</span>
         </router-link>
@@ -12,6 +13,7 @@
         <div class="head_title ellipsis" v-if="headTitle">
             <span class="title_text">{{headTitle}}</span>
         </div>
+        <slot name="msite-title"></slot>
         <slot name="changeCity"></slot>
     </header>
 </template>
